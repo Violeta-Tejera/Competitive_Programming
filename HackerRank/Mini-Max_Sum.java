@@ -19,9 +19,9 @@ class Result {
      */
 
     public static void miniMaxSum(List<Integer> arr) {
-        Integer min = arr.get(0);
-        Integer max = arr.get(0);
-        Integer cumSum = arr.get(0);
+        long min = arr.get(0);
+        long max = arr.get(0);
+        long cumSum = arr.get(0);
         int size = arr.size();
         
         for(int i = 1; i < size; i++){
