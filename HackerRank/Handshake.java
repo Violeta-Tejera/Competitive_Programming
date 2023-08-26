@@ -21,7 +21,7 @@ class Result {
 
     public static int handshake(int n) {
         /*
-        We have n attendees and if we start counting the handshakes each
+        Explanation: We have n attendees and if we start counting the handshakes each
         of them execute, we have n-1 hanshakes for the first attendee,
         n-2 handshakes for the second one,... 
         
