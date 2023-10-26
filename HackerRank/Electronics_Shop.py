@@ -7,15 +7,21 @@ import sys
 # Complete the getMoneySpent function below.
 #
 def getMoneySpent(keyboards, drives, b):
-    money = -1
+    valid_combinations = []
     
+    # O(len(k)+len(d)) solution (We ought to considerate all possible combinations)
     for k in keyboards:
         for d in drives:
-            aux_price = k + d
-            if aux_price > money and aux_price < b:
-                money = aux_price
+            price = k+d
+            if price <= b:
+                valid_combinations.append(price)
     
-    return money
+    if len(valid_combinations) == 0:
+        return -1
+    
+    return max(valid_combinations)
+             
+    
     
 
 if __name__ == '__main__':
